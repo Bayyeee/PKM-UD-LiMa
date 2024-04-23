@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">PKM-UD-LiMa</string>
+
+    <!--    String bagian Home-->
+
+    <string name="judul_home">UD. LiMa</string>
+
+    <string name="card_dataharian">Data Harian</string>
+    <string name="card_maps">Maps</string>
+    <string name="card_peringatan">Peringatan</string>
+    <string name="card_catatan">Catatan</string>
+    <string name="card_kontrolalat">Kontrol Alat</string>
+
+    <!--    String bagian Navigasi-->
+
+    <string name="nav_home">Home</string>
+    <string name="nav_catatan">Catatan</string>
+    <string name="nav_jadwal">Jadwal</string>
+    <string name="nav_profil">Profil</string>
+
+    <!--    String bagian Peringatan-->
+
+    <string name="judul_peringatan">Peringatan</string>
+    <string name="judul_deteksi">Deteksi Kebakaran</string>
+    <string name="card_sos">SOS</string>
+
 </resources>
