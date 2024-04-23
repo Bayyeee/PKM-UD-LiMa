@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_home"
+        android:icon="@drawable/outline_home_24"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/item_catatan"
+        android:icon="@drawable/outline_notes_24"
+        android:title="@string/nav_catatan" />
+    <item
+        android:id="@+id/item_jadwal"
+        android:icon="@drawable/outline_calendar_month_24"
+        android:title="@string/nav_jadwal" />
+
+    <item
+        android:id="@+id/item_profil"
+        android:icon="@drawable/outline_person_outline_24"
+        android:title="@string/nav_profil" />
+</menu>

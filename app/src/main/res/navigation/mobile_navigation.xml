@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+        <fragment
+            android:id="@+id/navigation_home"
+            android:label="@string/nav_home" />
+<!--            android:name="HomeFragment"-->
+<!--            tools:layout="@layout/fragment_home" />-->
+
+        <fragment
+            android:id="@+id/navigation_catatan"
+            android:label="@string/nav_catatan" />
+<!--            android:name="CatatanFragment"-->
+<!--            tools:layout="@layout/fragment_catatan" />-->
+
+        <fragment
+            android:id="@+id/navigation_jadwal"
+            android:label="@string/nav_jadwal" />
+<!--            android:name="JadwalFragment"-->
+<!--            tools:layout="@layout/fragment_jadwal" />-->
+
+        <fragment
+            android:id="@+id/navigation_profil"
+            android:label="@string/nav_profil" />
+<!--            android:name="ProfilFragment"-->
+<!--            tools:layout="@layout/fragment_profil" />-->
+
+</navigation>
