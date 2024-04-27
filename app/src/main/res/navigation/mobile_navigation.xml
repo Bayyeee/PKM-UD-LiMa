@@ -3,30 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/nav_home">
 
         <fragment
-            android:id="@+id/navigation_home"
+            android:id="@+id/item_home"
+            android:name="com.project.pkm_ud_lima.HomeFragment"
+            tools:layout="@layout/fragment_home"
             android:label="@string/nav_home" />
-<!--            android:name="HomeFragment"-->
-<!--            tools:layout="@layout/fragment_home" />-->
 
         <fragment
-            android:id="@+id/navigation_catatan"
+            android:id="@+id/item_catatan"
+            android:name="com.project.pkm_ud_lima.CatatanFragment"
+            tools:layout="@layout/fragment_catatan"
             android:label="@string/nav_catatan" />
-<!--            android:name="CatatanFragment"-->
-<!--            tools:layout="@layout/fragment_catatan" />-->
 
         <fragment
-            android:id="@+id/navigation_jadwal"
-            android:label="@string/nav_jadwal" />
-<!--            android:name="JadwalFragment"-->
-<!--            tools:layout="@layout/fragment_jadwal" />-->
-
-        <fragment
-            android:id="@+id/navigation_profil"
-            android:label="@string/nav_profil" />
-<!--            android:name="ProfilFragment"-->
-<!--            tools:layout="@layout/fragment_profil" />-->
-
+            android:id="@+id/item_riwayat"
+            android:label="@string/nav_riwayat"
+            android:name="com.project.pkm_ud_lima.RiwayatFragment"
+            tools:layout="@layout/fragment_riwayat" />
 </navigation>

@@ -10,12 +10,7 @@
         android:icon="@drawable/outline_notes_24"
         android:title="@string/nav_catatan" />
     <item
-        android:id="@+id/item_jadwal"
+        android:id="@+id/item_riwayat"
         android:icon="@drawable/outline_calendar_month_24"
-        android:title="@string/nav_jadwal" />
-
-    <item
-        android:id="@+id/item_profil"
-        android:icon="@drawable/outline_person_outline_24"
-        android:title="@string/nav_profil" />
+        android:title="@string/nav_riwayat" />
 </menu>

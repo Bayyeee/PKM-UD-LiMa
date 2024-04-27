@@ -12,6 +12,7 @@
         android:id="@+id/SplashScreenImage"
         android:layout_width="300dp"
         android:layout_height="200dp"
+        app:srcCompat="@mipmap/logo1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
