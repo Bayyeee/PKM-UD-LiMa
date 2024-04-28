@@ -11,6 +11,9 @@
     <string name="card_catatan">Catatan</string>
     <string name="card_kontrolalat">Kontrol Alat</string>
 
+    <string name="card_cuacahari">Hari\nTanggal</string>
+    <string name="card_cuacasuhu">35°</string>
+
     <!--    String bagian Navigasi-->
 
     <string name="nav_home">Home</string>

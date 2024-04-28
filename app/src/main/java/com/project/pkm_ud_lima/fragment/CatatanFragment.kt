@@ -1,18 +1,18 @@
-package com.project.pkm_ud_lima
+package com.project.pkm_ud_lima.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.project.pkm_ud_lima.databinding.FragmentHomeBinding
+import com.project.pkm_ud_lima.databinding.FragmentCatatanBinding
 
-class HomeFragment : Fragment() {
-    private lateinit var binding: FragmentHomeBinding
+class CatatanFragment : Fragment() {
+    private lateinit var binding: FragmentCatatanBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View { binding = FragmentHomeBinding.inflate(inflater, container, false)
+    ): View { binding = FragmentCatatanBinding.inflate(inflater, container, false)
         return binding.root
     }
 }
