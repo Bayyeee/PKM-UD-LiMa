@@ -1,12 +1,14 @@
 package com.project.pkm_ud_lima
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.project.pkm_ud_lima.databinding.ActivityMainBinding
+import com.project.pkm_ud_lima.fragment.CatatanFragment
+import com.project.pkm_ud_lima.fragment.HomeFragment
+import com.project.pkm_ud_lima.fragment.RiwayatFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

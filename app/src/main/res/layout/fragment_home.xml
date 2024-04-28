@@ -4,21 +4,234 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".HomeFragment"
+    tools:context=".fragment.HomeFragment"
     android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
+<!--        Logo kiri atas-->
         <ImageView
-            android:id="@+id/SplashScreenImage"
+            android:id="@+id/CornerLogo"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_marginStart="5dp"
-            app:srcCompat="@mipmap/logo2"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:srcCompat="@mipmap/logo3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        CardView cuaca-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardViewCuaca"
+            android:layout_width="320dp"
+            android:layout_height="145dp"
+            android:backgroundTint="@color/teal"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/CornerLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp">
+
+<!--            Data cuaca-->
+            <TextView
+                android:id="@+id/tvCuacahari"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:text="@string/card_cuacahari"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tvCuacasuhu"
+                android:layout_width="72dp"
+                android:layout_height="56dp"
+                android:text="@string/card_cuacasuhu"
+                android:textSize="48sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuacahari"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                />
+
+            <ImageView
+                android:layout_width="137dp"
+                android:layout_height="137dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="20dp"
+                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+
+
+        </androidx.cardview.widget.CardView>
+        
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SmallCardViewCuaca1"
+            android:layout_width="67dp"
+            android:layout_height="107dp"
+            app:layout_constraintTop_toBottomOf="@+id/CardViewCuaca"
+            app:layout_constraintStart_toStartOf="@+id/CardViewCuaca"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/teal"
+            app:cardCornerRadius="20dp">
+            
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SmallCardViewCuaca2"
+            android:layout_width="67dp"
+            android:layout_height="107dp"
+            app:layout_constraintTop_toBottomOf="@+id/CardViewCuaca"
+            app:layout_constraintStart_toEndOf="@+id/SmallCardViewCuaca1"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/teal"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SmallCardViewCuaca3"
+            android:layout_width="67dp"
+            android:layout_height="107dp"
+            app:layout_constraintTop_toBottomOf="@+id/CardViewCuaca"
+            app:layout_constraintStart_toEndOf="@+id/SmallCardViewCuaca2"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/teal"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+            
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SmallCardViewCuaca4"
+            android:layout_width="67dp"
+            android:layout_height="107dp"
+            app:layout_constraintTop_toBottomOf="@+id/CardViewCuaca"
+            app:layout_constraintStart_toEndOf="@+id/SmallCardViewCuaca3"
+            app:layout_constraintEnd_toEndOf="@id/CardViewCuaca"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:backgroundTint="@color/teal"
+            app:cardCornerRadius="20dp">
+            
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+            
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/lightblue"
+            app:layout_constraintTop_toBottomOf="@+id/SmallCardViewCuaca1"
+            app:layout_constraintStart_toStartOf="@+id/SmallCardViewCuaca1"
+            app:layout_constraintEnd_toEndOf="@+id/SmallCardViewCuaca2"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp"
+            />
+
+<!--        Peringatan-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardPeringatan"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/lightred"
+            app:layout_constraintTop_toBottomOf="@+id/SmallCardViewCuaca4"
+            app:layout_constraintStart_toStartOf="@id/SmallCardViewCuaca3"
+            app:layout_constraintEnd_toEndOf="@id/SmallCardViewCuaca4"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_siren_foreground" />
+
+        </androidx.cardview.widget.CardView>
+
+<!--        Kontrol Alat-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardKontrol"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/gray"
+            app:layout_constraintTop_toBottomOf="@+id/CardPeringatan"
+            app:layout_constraintStart_toStartOf="@id/SmallCardViewCuaca3"
+            app:layout_constraintEnd_toEndOf="@id/SmallCardViewCuaca4"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_alat_foreground" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        Catatan-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CardCatatan"
+            android:layout_width="150dp"
+            android:layout_height="140dp"
+            android:backgroundTint="@color/lightyellow"
+            app:layout_constraintTop_toBottomOf="@+id/CardPeringatan"
+            app:layout_constraintStart_toStartOf="@id/SmallCardViewCuaca1"
+            app:layout_constraintEnd_toEndOf="@id/SmallCardViewCuaca2"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                app:srcCompat="@mipmap/logo_catatan_foreground" />
+        </androidx.cardview.widget.CardView>
+
+<!--        Supaya bisa di-scroll kebawah bagi layar HP kecil-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CardCatatan"
+            android:layout_marginTop="20dp"
+            />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </FrameLayout>
