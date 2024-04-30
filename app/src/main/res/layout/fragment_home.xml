@@ -83,12 +83,32 @@
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="20dp">
-            
-            <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCuacasmallcardviewcuaca1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@mipmap/logo_cuaca_1_background" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="@string/card_cuacasuhu"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -102,11 +122,32 @@
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="20dp">
 
-            <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCuacasmallcardviewcuaca2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@mipmap/logo_cuaca_2_background" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="@string/card_cuacasuhu"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+                
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -119,13 +160,33 @@
             android:layout_marginStart="20dp"
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="20dp">
-
-            <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_cuaca_1_background" />
             
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCuacasmallcardviewcuaca3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@mipmap/logo_cuaca_3_background" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="@string/card_cuacasuhu"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -140,12 +201,32 @@
             android:backgroundTint="@color/teal"
             app:cardCornerRadius="20dp">
             
-            <ImageView
-                android:layout_width="38dp"
-                android:layout_height="38dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_cuaca_1_background" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCuacasmallcardviewcuaca4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@mipmap/logo_cuaca_4_background" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:text="@string/card_cuacasuhu"
+                    android:textSize="25sp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                />
             
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
 
@@ -172,12 +253,32 @@
             android:layout_marginTop="20dp"
             app:cardCornerRadius="20dp">
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_siren_foreground" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/ivPeringatan"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/logo_siren_foreground" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/card_peringatan"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivPeringatan" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
 <!--        Kontrol Alat-->
@@ -192,12 +293,32 @@
             android:layout_marginTop="20dp"
             app:cardCornerRadius="20dp">
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_alat_foreground" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <ImageView
+                    android:id="@+id/ivKontrol"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginBottom="30dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/logo_alat_foreground" />
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="20dp"
+                    android:text="@string/card_kontrolalat"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivKontrol" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <!--        Catatan-->
@@ -212,11 +333,32 @@
             android:layout_marginTop="20dp"
             app:cardCornerRadius="20dp">
 
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                app:srcCompat="@mipmap/logo_catatan_foreground" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivCatatan"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/logo_catatan_foreground"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="20dp"
+                    android:text="@string/card_catatan"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="30dp"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCatatan" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
 <!--        Supaya bisa di-scroll kebawah bagi layar HP kecil-->
@@ -224,11 +366,9 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:backgroundTint="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/CardCatatan"
-            android:layout_marginTop="20dp"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CardCatatan" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
