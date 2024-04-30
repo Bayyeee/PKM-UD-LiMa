@@ -8,13 +8,9 @@
     tools:context=".fragment.CatatanFragment"
     android:background="@color/white">
 
-    <ScrollView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
            android:id="@+id/rv_notes"
@@ -35,8 +31,6 @@
            android:layout_marginEnd="10dp"
            app:srcCompat="@drawable/ic_add" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
