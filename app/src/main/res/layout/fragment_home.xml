@@ -42,7 +42,7 @@
             <TextView
                 android:id="@+id/tvCuacahari"
                 android:layout_width="71dp"
-                android:layout_height="30dp"
+                android:layout_height="50dp"
                 android:text="@string/card_cuacahari"
                 android:textSize="12sp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -53,15 +53,25 @@
 
             <TextView
                 android:id="@+id/tvCuacasuhu"
-                android:layout_width="72dp"
+                android:layout_width="60dp"
                 android:layout_height="56dp"
                 android:text="@string/card_cuacasuhu"
                 android:textSize="48sp"
                 app:layout_constraintTop_toBottomOf="@+id/tvCuacahari"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 />
+
+            <TextView
+                android:layout_width="15dp"
+                android:layout_height="56dp"
+                android:text="@string/card_suhucelsius"
+                android:textSize="48sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvCuacahari"
+                app:layout_constraintStart_toEndOf="@+id/tvCuacasuhu"
+                android:layout_marginStart="85dp"
+                android:layout_marginTop="60dp"/>
 
             <ImageView
                 android:layout_width="137dp"
@@ -100,7 +110,8 @@
                     app:srcCompat="@mipmap/logo_cuaca_1_background" />
 
                 <TextView
-                    android:layout_width="40dp"
+                    android:id="@+id/tvSuhusmallcardviewcuaca1"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -108,6 +119,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:text="@string/card_suhucelsius"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvSuhusmallcardviewcuaca1"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca1"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -138,7 +156,8 @@
                     app:srcCompat="@mipmap/logo_cuaca_2_background" />
 
                 <TextView
-                    android:layout_width="40dp"
+                    android:id="@+id/tvSuhusmallcardviewcuaca2"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -146,6 +165,13 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:text="@string/card_suhucelsius"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvSuhusmallcardviewcuaca2"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca2" />
                 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
@@ -177,7 +203,8 @@
                     app:srcCompat="@mipmap/logo_cuaca_3_background" />
 
                 <TextView
-                    android:layout_width="40dp"
+                    android:id="@+id/tvSuhusmallcardviewcuaca3"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -185,6 +212,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:text="@string/card_suhucelsius"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvSuhusmallcardviewcuaca3"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca3"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
@@ -217,7 +252,8 @@
                     app:srcCompat="@mipmap/logo_cuaca_4_background" />
 
                 <TextView
-                    android:layout_width="40dp"
+                    android:id="@+id/tvSuhusmallcardviewcuaca4"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -225,6 +261,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                 />
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:text="@string/card_suhucelsius"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/tvSuhusmallcardviewcuaca4"
+                    app:layout_constraintTop_toBottomOf="@+id/ivCuacasmallcardviewcuaca4"/>
             
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
