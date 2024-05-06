@@ -61,7 +61,7 @@ class HomeFragment : Fragment() {
                 if (response.isSuccessful) {
                     val cuacaResponse = response.body()
                     var weather = cuacaResponse?.list?.get(0)?.weather?.get(0)?.main
-                    val temperature = cuacaResponse?.list?.get(0)?.main?.temp
+                    val temperature = cuacaResponse?.list?.get(0)?.main?.temp?.let { Math.round((it as Double)).toInt() }
                     val date = cuacaResponse?.list?.get(0)?.dtTxt
 
                     val oldFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
