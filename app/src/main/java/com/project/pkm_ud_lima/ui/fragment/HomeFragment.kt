@@ -1,4 +1,4 @@
-package com.project.pkm_ud_lima.fragment
+package com.project.pkm_ud_lima.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -19,6 +19,7 @@ class HomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
 
     // HashMap translasi cuaca dari bahasa Inggris ke bahasa Indonesia
+
     private val weatherMap = hashMapOf(
         "Thunderstorm" to "Badai Petir",
         "Drizzle" to "Gerimis",
@@ -66,13 +67,15 @@ class HomeFragment : Fragment() {
 
                     val oldFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
                     val newFormat = SimpleDateFormat("d MMMM yyyy", Locale("in", "ID"))
+                    val dayFormat = SimpleDateFormat("EEEE", Locale("in", "ID"))
 
                     val parsedDate = oldFormat.parse(date)
                     val formattedDate = newFormat.format(parsedDate)
+                    val dayDate = dayFormat.format(parsedDate)
 
                     weather = weatherMap[weather] ?: weather
 
-                    binding.tvCuacahari.text = "$formattedDate\n$weather"
+                    binding.tvCuacahari.text = "$dayDate\n$formattedDate\n$weather"
                     binding.tvCuacasuhu.text = "$temperature"
                     binding.tvSuhusmallcardviewcuaca1.text = "$temperature"
                     binding.tvSuhusmallcardviewcuaca2.text = "$temperature"

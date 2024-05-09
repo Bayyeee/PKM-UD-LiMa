@@ -1,14 +1,15 @@
-package com.project.pkm_ud_lima
+package com.project.pkm_ud_lima.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.project.pkm_ud_lima.R
 import com.project.pkm_ud_lima.databinding.ActivityMainBinding
-import com.project.pkm_ud_lima.fragment.CatatanFragment
-import com.project.pkm_ud_lima.fragment.HomeFragment
-import com.project.pkm_ud_lima.fragment.RiwayatFragment
+import com.project.pkm_ud_lima.ui.fragment.CatatanFragment
+import com.project.pkm_ud_lima.ui.fragment.HomeFragment
+import com.project.pkm_ud_lima.ui.fragment.RiwayatFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -16,6 +17,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // menyembunyikan action bar
+        supportActionBar?.hide()
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)

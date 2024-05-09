@@ -30,11 +30,27 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--    String bagian Catatan-->
+    <!--    String bagian Catatan-->
     <string name="judul_catatan">Judul</string>
     <string name="deskripsi_catatan">Deskripsi</string>
     <string name="tambah_catatan">Tambah</string>
     <string name="hapus_catatan">Hapus</string>
     <string name="tanggal_catatan">Tanggal</string>
+
+    <string name="message_undo">Batalkan menghapus catatan sebelumnya?</string>
+    <string name="message_ok">OK</string>
+    <string name="cancel">Batal</string>
+    <string name="empty">Bagian ini tidak bisa kosong</string>
+    <string name="update">Update</string>
+    <string name="change">Ubah</string>
+    <string name="add">Tambah</string>
+    <string name="save">Simpan</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="message_cancel">Apakah Anda ingin membatalkan perubahan pada catatan?</string>
+    <string name="message_delete">Apakah Anda yakin ingin menghapus catatan ini?</string>
+    <string name="added">Catatan berhasil ditambahkan</string>
+    <string name="changed">Catatan berhasil diubah</string>
+    <string name="deleted">Catatan berhasil dihapus</string>
 
 </resources>

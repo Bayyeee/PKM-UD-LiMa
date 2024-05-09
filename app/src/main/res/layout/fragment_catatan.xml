@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.CatatanFragment"
+    tools:context=".ui.fragment.CatatanFragment"
     android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
