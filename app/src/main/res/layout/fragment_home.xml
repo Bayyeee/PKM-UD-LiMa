@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".fragment.HomeFragment"
+    tools:context=".ui.fragment.HomeFragment"
     android:background="@color/white">
 
     <ScrollView
@@ -15,15 +15,26 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/CornerLogo"
+            app:navigationIcon="@drawable/burger_menu"
+            />
 
-<!--        Logo kiri atas-->
+
+<!--        Logo kanan atas-->
         <ImageView
             android:id="@+id/CornerLogo"
             android:layout_width="85dp"
             android:layout_height="85dp"
-            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
             app:srcCompat="@mipmap/logo3"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 <!--        CardView cuaca-->
@@ -41,8 +52,8 @@
 <!--            Data cuaca-->
             <TextView
                 android:id="@+id/tvCuacahari"
-                android:layout_width="71dp"
-                android:layout_height="50dp"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
                 android:text="@string/card_cuacahari"
                 android:textSize="12sp"
                 app:layout_constraintTop_toTopOf="parent"
@@ -111,7 +122,7 @@
 
                 <TextView
                     android:id="@+id/tvSuhusmallcardviewcuaca1"
-                    android:layout_width="28dp"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -157,7 +168,7 @@
 
                 <TextView
                     android:id="@+id/tvSuhusmallcardviewcuaca2"
-                    android:layout_width="28dp"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -204,7 +215,7 @@
 
                 <TextView
                     android:id="@+id/tvSuhusmallcardviewcuaca3"
-                    android:layout_width="28dp"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"
@@ -253,7 +264,7 @@
 
                 <TextView
                     android:id="@+id/tvSuhusmallcardviewcuaca4"
-                    android:layout_width="28dp"
+                    android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:text="@string/card_cuacasuhu"
                     android:textSize="25sp"

@@ -1,4 +1,4 @@
-package com.project.pkm_ud_lima.fragment
+package com.project.pkm_ud_lima.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

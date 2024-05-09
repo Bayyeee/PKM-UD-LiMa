@@ -7,19 +7,19 @@
 
         <fragment
             android:id="@+id/item_home"
-            android:name="com.project.pkm_ud_lima.fragment.HomeFragment"
+            android:name="com.project.pkm_ud_lima.ui.fragment.HomeFragment"
             tools:layout="@layout/fragment_home"
             android:label="@string/nav_home" />
 
         <fragment
             android:id="@+id/item_catatan"
-            android:name="com.project.pkm_ud_lima.fragment.CatatanFragment"
+            android:name="com.project.pkm_ud_lima.ui.fragment.CatatanFragment"
             tools:layout="@layout/fragment_catatan"
             android:label="@string/nav_catatan" />
 
         <fragment
             android:id="@+id/item_riwayat"
             android:label="@string/nav_riwayat"
-            android:name="com.project.pkm_ud_lima.fragment.RiwayatFragment"
+            android:name="com.project.pkm_ud_lima.ui.fragment.RiwayatFragment"
             tools:layout="@layout/fragment_riwayat" />
 </navigation>
