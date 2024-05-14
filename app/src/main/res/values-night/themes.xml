@@ -4,5 +4,7 @@
         <!-- Customize your dark theme here. -->
         <item name="colorPrimary">@color/darkgreen</item>
         <item name="colorSecondaryContainer">@color/lightgreen</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 </resources>
