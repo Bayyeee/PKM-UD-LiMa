@@ -12,7 +12,7 @@ interface ApiService {
         @Query("lat") lat: Double,
         @Query("lon") lon: Double,
         // API Key dari OpenWeatherMap, rencana akan dipindah ke secrets.properties agar lebih aman
-        @Query("appid") appid: String = "api_key",
+        @Query("appid") appid: String = "API_KEY",
         @Query("units") units: String = "metric",
         @Query("lang") lang: String = "id",
     ) : Call<CuacaResponse>

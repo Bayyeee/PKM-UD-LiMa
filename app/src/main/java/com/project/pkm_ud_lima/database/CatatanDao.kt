@@ -21,7 +21,7 @@ interface CatatanDao {
     @Delete
     fun delete(catatan: Catatan)
 
-    @Query("SELECT * FROM catatan ORDER BY id ASC")
+    @Query("SELECT * FROM catatan ORDER BY id DESC")
     fun getAllCatatan(): LiveData<List<Catatan>>
 
 }

@@ -1,11 +1,16 @@
 package com.project.pkm_ud_lima.ui.fragment
 
 import android.os.Bundle
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
+import com.google.android.material.navigation.NavigationView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
+import com.project.pkm_ud_lima.R
 import com.project.pkm_ud_lima.data.retrofit.ApiConfig
 import com.project.pkm_ud_lima.data.response.CuacaResponse
 import com.project.pkm_ud_lima.databinding.FragmentHomeBinding
@@ -49,6 +54,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // RETROFIT CUACA
 
         val apiService = ApiConfig.getApiService()
         // daerah Serapat

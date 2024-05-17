@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.widget.Toolbar
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +35,9 @@ class CatatanAddUpdateActivity : AppCompatActivity() {
 
         _activityCatatanAddUpdateBinding = ActivityCatatanAddUpdateBinding.inflate(layoutInflater)
         setContentView(binding?.root)
+
+        val toolbar: Toolbar = binding?.toolbaraddupdate ?: return
+        setSupportActionBar(toolbar)
 
         supportActionBar?.setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.white)))
 

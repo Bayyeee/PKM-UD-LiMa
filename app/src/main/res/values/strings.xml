@@ -53,4 +53,9 @@
     <string name="changed">Catatan berhasil diubah</string>
     <string name="deleted">Catatan berhasil dihapus</string>
 
+<!--    String bagian Navigasi Drawer-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FireGuard</string>
+    <string name="nav_header_subtitle">UD. LiMa</string>
 </resources>
