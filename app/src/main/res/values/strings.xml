@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PKM-UD-LiMa</string>
+    <string name="app_name">FireGuard</string>
 
     <!--    String bagian Home-->
 
@@ -27,8 +27,6 @@
     <string name="judul_peringatan">Peringatan</string>
     <string name="judul_deteksi">Deteksi Kebakaran</string>
     <string name="card_sos">SOS</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--    String bagian Catatan-->
     <string name="judul_catatan">Judul</string>
@@ -53,9 +51,12 @@
     <string name="changed">Catatan berhasil diubah</string>
     <string name="deleted">Catatan berhasil dihapus</string>
 
-<!--    String bagian Navigasi Drawer-->
+    <!--    String bagian Navigasi Drawer-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">FireGuard</string>
     <string name="nav_header_subtitle">UD. LiMa</string>
+    <string name="nav_header_tentang">Tentang FireGuard</string>
+    <string name="nav_header_bantuan">Bantuan &amp; Dukungan</string>
+    <string name="nav_header_instagram">Our Instagram</string>
 </resources>

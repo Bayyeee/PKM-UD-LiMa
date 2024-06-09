@@ -1,19 +1,20 @@
 package com.project.pkm_ud_lima.ui.fragment
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.core.view.GravityCompat
-import com.google.android.material.navigation.NavigationView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.drawerlayout.widget.DrawerLayout
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.project.pkm_ud_lima.R
 import com.project.pkm_ud_lima.data.retrofit.ApiConfig
 import com.project.pkm_ud_lima.data.response.CuacaResponse
 import com.project.pkm_ud_lima.databinding.FragmentHomeBinding
+import com.project.pkm_ud_lima.ui.activity.MainActivity
+import com.project.pkm_ud_lima.ui.activity.PeringatanActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -57,8 +58,8 @@ class HomeFragment : Fragment() {
 
         // RETROFIT CUACA
 
-        val apiService = ApiConfig.getApiService()
-        // daerah Serapat
+        val apiService = ApiConfig.getWeatherService()
+        // daerah Rantau Badauh
         val lat = -3.101074
         val lon = 114.717258
 
@@ -100,5 +101,24 @@ class HomeFragment : Fragment() {
                 Toast.makeText(context, "Koneksi ke server gagal", Toast.LENGTH_SHORT).show()
             }
         })
+
+        // Click listener CardView Catatan
+        val mainActivity = activity as MainActivity
+        val bottomNavView: BottomNavigationView = mainActivity.binding.navView
+        val cardCatatan: CardView = binding.CardCatatan
+        cardCatatan.setOnClickListener {
+            val transaction = activity?.supportFragmentManager?.beginTransaction()
+            transaction?.replace(R.id.nav_host_fragment_activity_main, CatatanFragment())
+            transaction?.addToBackStack(null)
+            transaction?.commit()
+
+            bottomNavView.selectedItemId = R.id.item_catatan
+        }
+
+        val cardPeringatan: CardView = binding.CardPeringatan
+        cardPeringatan.setOnClickListener{
+            val intent = Intent(context, PeringatanActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
