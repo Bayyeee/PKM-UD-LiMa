@@ -9,9 +9,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 // Konfigurasi retrofit
 
-class ApiConfig{
+class ApiConfig {
     companion object {
-        fun getApiService(): ApiService {
+        private fun getRetrofit(baseUrl: String): Retrofit {
             val loggingInterceptor = if (BuildConfig.DEBUG) {
                 HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY)
             } else {
@@ -22,12 +22,19 @@ class ApiConfig{
                 .addInterceptor(loggingInterceptor)
                 .build()
 
-            val retrofit = Retrofit.Builder()
-                .baseUrl("https://api.openweathermap.org/")
+            return Retrofit.Builder()
+                .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build()
-            return retrofit.create(ApiService::class.java)
+        }
+
+        fun getWeatherService(): ApiService {
+            return getRetrofit("https://api.openweathermap.org/").create(ApiService::class.java)
+        }
+
+        fun getFlameService(): ApiService {
+            return getRetrofit("https://fireguardudlima.000webhostapp.com/").create(ApiService::class.java)
         }
     }
 }
